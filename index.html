@@ -1,0 +1,252 @@
+<header id="home">
+  <h1>🍩 Magical Food Blaster 🍝</h1>
+  <p>A magical food-shooting arcade game with doughnut missiles, spaghetti lasers and monsters!</p>
+</header>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#play">Play</a>
+  <a href="#story">Story</a>
+  <a href="#levels">Levels</a>
+  <a href="#weapons">Weapons</a>
+  <a href="#characters">Characters</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#controls">Controls</a>
+  <a href="#tips">Tips</a>
+</nav>
+
+<section class="hero">
+  <h2>Welcome to the Candy Kingdom!</h2>
+  <p>
+    Monsters are attacking the wizard tower. Aim your magical food missiles and save the kingdom!
+  </p>
+  <button id="playNowBtn">Play Now</button>
+</section>
+
+<section id="play" class="card">
+  <h2>🎮 Play the Game</h2>
+  <p>
+    Aim with your mouse and left-click inside the game area to shoot.
+  </p>
+  <p>
+    Every 5 kills gives you a random special weapon: double damage, triple damage or 100 damage.
+  </p>
+
+  <div id="game">
+    <div id="topBar">
+      <p>
+        Score: <span id="score">0</span> |
+        Health: <span id="health">3</span> |
+        Level: <span id="level">1</span>
+      </p>
+
+      <p>
+        Weapon: <span id="weaponName">Normal</span> |
+        Special Shots: <span id="specialShots">0</span>
+      </p>
+
+      <button id="pauseBtn">Pause</button>
+      <button id="restartBtn">Try Again</button>
+    </div>
+
+    <div id="arena">
+      <div id="crosshair">🎯</div>
+      <div id="player">🧙‍♂️</div>
+      <div id="bonusMessage" class="hidden"></div>
+
+      <div id="pauseScreen" class="hidden">
+        <h2>⏸ Paused</h2>
+        <p>Press P or click Resume to continue.</p>
+        <button id="resumeBtn">Resume</button>
+      </div>
+
+      <div id="messageScreen" class="hidden">
+        <h2 id="messageTitle"></h2>
+        <p id="messageText"></p>
+        <p>Final Score: <span id="finalScore">0</span></p>
+        <button id="playAgainBtn">Play Again</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="story" class="card">
+  <h2>📖 Game Story</h2>
+  <p>
+    The Candy Kingdom was peaceful until strange monsters appeared from a magical portal.
+    They want to steal all the enchanted sweets and destroy the wizard tower.
+  </p>
+  <p>
+    You play as a brave wizard who uses magical food missiles to defeat the enemies.
+  </p>
+</section>
+
+<section id="levels" class="card">
+  <h2>⭐ Game Levels</h2>
+
+  <div class="grid">
+    <div>
+      <h3>Level 1 👾</h3>
+      <p>Aliens are slow and take 1 shot to defeat.</p>
+    </div>
+
+    <div>
+      <h3>Level 2 👹</h3>
+      <p>Food goblins are faster and take 2 shots to defeat.</p>
+    </div>
+
+    <div>
+      <h3>Level 3 🐉</h3>
+      <p>Dragon pasta monsters are strongest and take 3 shots to defeat.</p>
+    </div>
+  </div>
+</section>
+
+<section id="weapons" class="card">
+  <h2>🔫 Magical Weapons</h2>
+
+  <div class="grid">
+    <div>
+      <h3>🍩 Double Doughnut</h3>
+      <p>A special weapon that does 2 damage per shot.</p>
+    </div>
+
+    <div>
+      <h3>🍝 Triple Spaghetti</h3>
+      <p>A special weapon that does 3 damage per shot.</p>
+    </div>
+
+    <div>
+      <h3>🌟 Mega Sugar Blast</h3>
+      <p>A rare special weapon that does 100 damage per shot.</p>
+    </div>
+  </div>
+
+  <button id="weaponBtn">Choose Random Weapon</button>
+  <p id="weaponResult"></p>
+</section>
+
+<section id="characters" class="card">
+  <h2>🧙 Characters</h2>
+
+  <div class="grid">
+    <div>
+      <h3>🧙‍♂️ Wizard</h3>
+      <p>The hero who fires magical food missiles.</p>
+    </div>
+
+    <div>
+      <h3>👾 Alien</h3>
+      <p>The first enemy in Level 1.</p>
+    </div>
+
+    <div>
+      <h3>👹 Goblin</h3>
+      <p>A faster enemy from Level 2.</p>
+    </div>
+
+    <div>
+      <h3>🐉 Dragon</h3>
+      <p>The strongest enemy in Level 3.</p>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="card">
+  <h2>🖼️ Game Gallery</h2>
+  <p>Here are some fun moments and ideas from Magical Food Blaster.</p>
+
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <div class="gallery-emoji">🧙‍♂️🎯</div>
+      <h3>Wizard Aim</h3>
+      <p>The wizard aims at enemies using the mouse.</p>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-emoji">🍩🚀</div>
+      <h3>Doughnut Missile</h3>
+      <p>A magical doughnut missile flies across the arena.</p>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-emoji">🌟💥</div>
+      <h3>Special Weapon</h3>
+      <p>Every 5 kills gives the player a powerful weapon.</p>
+    </div>
+
+    <div class="gallery-item">
+      <div class="gallery-emoji">🏆🍬</div>
+      <h3>Victory Moment</h3>
+      <p>The Candy Kingdom is saved after Level 3.</p>
+    </div>
+  </div>
+</section>
+
+<section id="reviews" class="card">
+  <h2>⭐ Player Reviews</h2>
+  <p>See what players think about Magical Food Blaster.</p>
+
+  <div class="reviews-grid">
+    <div class="review">
+      <h3>Alex</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"I like aiming the doughnut missiles at the monsters!"</p>
+    </div>
+
+    <div class="review">
+      <h3>Sophia</h3>
+      <p>⭐⭐⭐⭐</p>
+      <p>"The special weapons make the game more exciting."</p>
+    </div>
+
+    <div class="review">
+      <h3>Jayden</h3>
+      <p>⭐⭐⭐⭐⭐</p>
+      <p>"The 100 damage weapon is my favourite!"</p>
+    </div>
+  </div>
+
+  <h3>Add Your Review</h3>
+
+  <input id="reviewName" type="text" placeholder="Your name">
+  <input id="reviewText" type="text" placeholder="Write your review">
+  <button id="addReviewBtn">Add Review</button>
+
+  <div id="newReviews"></div>
+</section>
+
+<section id="controls" class="card">
+  <h2>🎮 Controls</h2>
+
+  <ul>
+    <li>Aim: Move your mouse inside the game area</li>
+    <li>Shoot: Left mouse click</li>
+    <li>Pause: P or Pause Button</li>
+    <li>Try Again: Try Again Button</li>
+  </ul>
+</section>
+
+<section id="tips" class="card">
+  <h2>💡 Tips to Win</h2>
+  <p>Aim at enemies before they reach the bottom.</p>
+  <p>Every 5 kills gives you a special weapon for 5 shots.</p>
+  <p>The 100 damage weapon can destroy any enemy in one hit.</p>
+
+  <button id="factBtn">Show Game Fact</button>
+  <p id="factText"></p>
+</section>
+
+<section id="about" class="card">
+  <h2>ℹ️ About This Project</h2>
+  <p>
+    This website and game were made for KS3 Computing using HTML, CSS and JavaScript.
+    The game includes mouse aiming, left-click shooting, enemies, score, health,
+    levels, special weapons, pause, victory and defeat screens.
+  </p>
+</section>
+
+<footer>
+  <p>Made for KS3 Computing 🎮</p>
+</footer>
